@@ -90,12 +90,12 @@ const DepositDetails = () => {
       ) : null}
       <div
         onClick={handleNavigate}
-        className="fixed top-0 px-8 w-full cursor-pointer"
+        className="fixed top-0 py-8 w-full cursor-pointer"
         style={{ backgroundColor: "#ffffff" }}
       >
         <img src={BackIcon} alt="backIcon" />
       </div>
-      <h1 className="text-2xl font-bold mt-16">Confirm Details</h1>
+      <h1 className="text-2xl font-bold mt-32">Confirm Details</h1>
       <div className="mt-16">
         <p>
           <span className="font-bold">Name:</span> {state.state.user.name}
