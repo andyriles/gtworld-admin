@@ -1,4 +1,4 @@
-import Sidenav from "./components/sidenav";
+import Sidenav from "./components/Sidenav";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import DepositDetails from "./pages/DepositDetails";

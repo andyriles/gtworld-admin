@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Filters = () => {
-  const [secondFilter, setSecondFilter] = useState("All Deposits");
+  const [secondFilter, setSecondFilter] = useState("All Deposits  ");
   const [firstFilter, setFirstFilter] = useState("Last 30 Days");
   return (
     <div className="flex items-center justify-end pt-4 mr-28 gap-x-8">
