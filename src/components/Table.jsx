@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const headers = ["Name", "Account Number", "Cheque", "Date", "Status"];
 const Table = ({ data, handleNavigate }) => {
   const formatDate = (dateToParse) => {
