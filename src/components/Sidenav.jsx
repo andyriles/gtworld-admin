@@ -17,7 +17,7 @@ function Sidenav({ children }) {
           htmlFor="my-drawer-2"
           className="btn btn-primary drawer-button lg:hidden"
         >
-          Open drawer
+          <p className="text-red">cwe vrw vsfrv</p>
         </label>
       </div>
       <div className="drawer-side" style={{ backgroundColor: "#444444" }}>
@@ -64,7 +64,7 @@ function Sidenav({ children }) {
             >
               <img
                 src={Accounts}
-                alt="Cheque deposits"
+                alt="Accounts"
                 className=""
                 style={{ marginRight: "27px" }}
               />

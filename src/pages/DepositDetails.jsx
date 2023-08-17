@@ -7,6 +7,7 @@ import { useState } from "react";
 import "./deposit-details.css";
 
 const DepositDetails = () => {
+  const navigate = useNavigate();
   const [sourceName, setSourceName] = useState("Calistus Enterprise");
   const [sourceNumber, setSourceNumber] = useState("0838847890");
   const [loading, setLoading] = useState(false);
@@ -27,7 +28,7 @@ const DepositDetails = () => {
     return `${day}/${month}/${year} ${formattedHours}:${minutes} ${meridiem}`;
   };
   const state = useLocation();
-  const navigate = useNavigate();
+
   console.log(state.state);
   const handleNavigate = () => {
     navigate("/");
@@ -89,7 +90,7 @@ const DepositDetails = () => {
       ) : null}
       <div
         onClick={handleNavigate}
-        className="fixed top-0 pt-8 w-full"
+        className="fixed top-0 px-8 w-full cursor-pointer"
         style={{ backgroundColor: "#ffffff" }}
       >
         <img src={BackIcon} alt="backIcon" />
@@ -174,7 +175,7 @@ const DepositDetails = () => {
       </div>
       <small className="pt-2">This is the account of the cheque owner</small>
       <div className="divider"></div>
-      <div className="flex justify-end items-center mt-2 mr-32 gap-x-8 mb-8">
+      <div className="flex justify-end items-center mt-2  gap-x-8 mb-8 w-9/10">
         <button
           className="bg-white rounded-sm py-2 px-16"
           style={{ border: "1px solid #FF0000" }}
