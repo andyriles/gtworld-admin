@@ -8,17 +8,17 @@ import Settings from "../assets/settings.svg";
 
 function Sidenav({ children }) {
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open md:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content pr-4 ">
         {/* Page content here */}
         <div>{children}</div>
-        <label
+        {/*  <label
           htmlFor="my-drawer-2"
           className="btn btn-primary drawer-button lg:hidden"
         >
           <p className="text-red">cwe vrw vsfrv</p>
-        </label>
+        </label> */}
       </div>
       <div className="drawer-side" style={{ backgroundColor: "#444444" }}>
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
